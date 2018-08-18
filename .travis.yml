@@ -6,11 +6,7 @@ services:
   - mongodb
   - redis-server
 env:
-  - NODE_ENV=ci 
-  - PORT=3000
-  - MONGO_URI=mongodb://127.0.0.1:27017/blog_ci
-  - REDIS_URL=redis://127.0.0.1:6379
-  - COOKIE_KEY=123123123
+  - NODE_ENV=ci PORT=3000 MONGO_URI=mongodb://127.0.0.1:27017/blog_ci REDIS_URL=redis://127.0.0.1:6379 COOKIE_KEY=123123123
 cache:
   directories: 
     - node_modules
